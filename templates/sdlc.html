@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDLC</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins" , "sans-serif";
+        }
+    
+        body{
+            background: #081b29;
+            color: #ededed;
+            overflow: unset;
+        }
+    
+        .header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+    
+    
+        .logo{
+            font-size: 25px;
+            color: #ededed;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    
+        .navbar a {
+            font-size: 18px;
+            color: #ededed;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 35px;
+            transition: 3s;
+        }
+    
+        .navbar a:hover{
+            color: #00abf0;
+        }
+    
+        .home-content{
+            max-width: 1000px;
+            height: 80vh;
+            padding: 10% 10% 10% 10% ;
+        }
+    
+        .home-content h1{   
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+    
+        .home-content h1{
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+    
+        .home-content h3{
+            font-size: 32px;
+            font-weight: 700;
+            color: #00abf0;
+        }
+    
+        .home-content p{
+            font-size: 25px;
+            color: #ededed;
+            text-decoration: none;
+            font-weight: 500;
+            margin: 10px 0px 10px;
+        }
+    
+        .home-content a{
+            font-size: 25px;
+            color: aqua;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    
+        .home-content li{
+            font-size: 25px;
+            color: aquamarine;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .code{
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Nash</a>
+
+        <nav class="navbar">
+            <a href="http://127.0.0.1:8000/">Home</a>
+            <a href="http://127.0.0.1:8000/about">about</a>
+            <a href="http://127.0.0.1:8000/Docs">Docs</a>
+            <a href="http://127.0.0.1:8000/profile">portfoilio</a>
+            <a href="http://127.0.0.1:8000/resource">Resources</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h1>System devlopment Life cylcle</h1>
+            <P>A system is a collection of components that interact together to achieve a specific task </P>
+            <p>A system converts data into information</p>
+            <p>Manual system </p>
+            <ul>
+                <li>Errors are minimal which data processed by a computer program</li>
+                <li>Since there data is inserted manually processed there is room for more error </li>
+                <li>Processing of data is less efficien</li>
+                <li>Requires a large space for storage of data </li>
+                <li>Data is open to lots of threats</li>
+            </ul>
+            <p>Some of the advantages of using a computer based syatem are </p>
+            <ul>
+                <li>Errors are minimal which data processed by a computer program</li>
+                <li>Data can be processed more efficiently</li>
+                <li>Large amount of data can be stored in a small physical surface such as a database </li>
+                <li>Security can be ensured with backups and the use of passwords </li>
+            </ul>
+            <p>Stages of system development life cycle</p>
+            <ul>
+                <li>Identification of requirements</li>
+                <li>Designing the solution</li>
+                <li>Coding of the solution</li>
+                <li>Testing and debugging</li>
+                <li>Deployment of the system</li>
+                <li>Maintenance of the system</li>
+            </ul>
+            <p>Some ways of identifying requirements</p>
+            <ul>
+                <li>Observing</li>
+                <li>Interviews</li>
+                <li>Questioners</li>
+                <li>Document sample collection </li>
+                <li>Prototyping</li>
+            </ul>
+            <p>Key points when we design a software</p>
+            <ul>
+                <li>Identification of software and software architecture</li>
+                <li>User interface</li>
+                <li>Identification of main hardware system and its components</li>
+                <li>Identification of dependency of each sub system</li>
+                <li>Deciding on the hardware and software to run in the computer </li>
+                <li>Designing infrastructure for the software database and user interface </li>
+                <li>Planning of tests </li>
+            </ul>
+            <p>The next step is to code the system using a suitable computer language </p>
+            <p>The main objective of testing and debugging is minimize the error in the above steps </p>
+            <p>There are few phase in testing </p>
+            <ul>
+                <li>Unit testing</li>
+                <li>Integration testing</li>
+                <li>System testing</li>
+                <li>Acceptance testing</li>
+            </ul>
+            <p>Each unit in the system is tested input are testing in accordance with the output this is called unit testing </p>
+            <p>Units that are already tested and debugged are integrated to form the complete system and the integrated system is tested this is called integration testing </p>
+            <p>The complete system is tested for it is output for the provided input  this is called system testing </p>
+            <p>Acceptance of user is tested at last and this is known as acceptance testing </p>
+            <p>There are few different types of deployment </p>
+            <ul>
+                <li>Direct deployment</li>
+                <li>Parallel deployment</li>
+                <li>Pilot deployment</li>
+                <li>Phased deployment </li>
+            </ul>
+            <p>Direct deployment means the existing system is totally terminated and then the new system is installed </p>
+            <p>Parallel deployment is when the existing system and the new system are use parallel</p>
+            <p>Pilot deployment is about using the newly developed system in a selected area</p>
+            <p>In phased deployment the new system is deployed in stages success of one stage leads to the next and completing the new system </p>
+            <p>A system once installed and in use for a certain period needs to be maintained well with system maintenance the following may be required</p>
+            <ul>
+                <li>Adopting new technology into the system to improve the efficiency </li>
+                <li>Issues that surfaced with the use of the system which were identified during the SDLC can be solved </li>
+                <li>Developing the new system to suit the new requirements </li>
+            </ul>
+            <p>There are several models for SDLC each model facilitates the system in different ways </p>
+            <p>Some examples for theses models are</p>
+            <ul>
+                <li>Waterfall model</li>
+                <li>Iterative incremental model</li>
+                <li>Prototyping model</li>
+                <li>Spiral model</li>
+            </ul>
+            <p>The waterfall model consist of several stages of linear development </p>
+            <p>To develop system using the waterfall model</p>
+            <ul>
+                <li>First identify requirements</li>
+                <li>Finish one stage before the next</li>
+                <li>The result of he developed system is found at the final stage</li>
+            </ul>
+            <p>The result of he developed system is found at the final stage</p>
+            <p>The iterative incremental model allows software developers to take advantage of what was learned during the development and use it on the system</p>
+            <p>In this model a system is developed through repeated cycles and in smaller portions at a time </p>
+        </div>
+    </section>
+</body>
+</html>

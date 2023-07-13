@@ -306,6 +306,39 @@
             <p>Variables declared inside a { } block cannot be accessed from outside the block:</p>
             <p>Variables declared with the var keyword can NOT have block scope.</p>
             <p>Variables defined with var are hoisted to the top and can be initialized at any time.</p>
+            <p>Variables defined with let are also hoisted to the top of the block, but not initialized.</p>
+            <p>Meaning: Using a let variable before it is declared will result in a ReferenceError:</p>    
+            <p>The const keyword was introduced in ES6 (2015)</p>
+            <p>Variables defined with const cannot be Redeclared</p>
+            <p>Variables defined with const cannot be Reassigned</p>
+            <p>Variables defined with const have Block Scope</p>
+            <p>When to use JavaScript const?</p>
+            <li>Always declare a variable with const when you know that the value should not be changed.</li>
+            <p>Use const when you declare:</p>
+            <ul>
+                <li>A new Array</li>
+                <li>A new Object</li>
+                <li>A new Function</li>
+                <li>A new RegExp</li>
+                <li>Constant Objects and Arrays</li>
+            </ul>
+            <p>The keyword const is a little misleading.</p>
+            <p>It does not define a constant value. It defines a constant reference to a value.</p>
+            <p>Because of this you can NOT:</p>
+            <ul>
+                <li>Reassign a constant value</li>
+                <li>Reassign a constant array</li>
+                <li>Reassign a constant object</li>
+            </ul>
+            <p>But you CAN:</p>
+            <ul>
+                <li>Change the elements of constant array</li>
+                <li>Change the properties of constant object</li>
+            </ul>
+            <p>Variables defined with var are hoisted to the top and can be initialized at any time.</p>
+            <p>If you want to learn more about hoisting, study the chapter JavaScript Hoisting.</p>
+            <p>Variables defined with const are also hoisted to the top, but not initialized.</p>
+            <p>Meaning: Using a const variable before it is declared will result in a ReferenceError:</p>
         </div>
     </section>
 </body>

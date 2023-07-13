@@ -26,9 +26,9 @@ def OS():
 def force():
     return render_template("Force.html" )
 
-@Nashweb.route("/science/physics/light_sound")
+@Nashweb.route("/science/physics/Geometric_optics")
 def light():
-    return render_template("light.html" )
+    return render_template("Geometric_optics.html" )
 
 @Nashweb.route("/science/physics/motion")
 def motion():
@@ -89,3 +89,15 @@ def law():
 @Nashweb.route("/book_summaries")
 def Book_summaries():
     return render_template("./books/Book_summaries.html" )
+
+@Nashweb.route("/ICT/sdlc")
+def sdlc():
+    return render_template("sdlc.html" )
+
+@Nashweb.route("/ICT/genaration of computres")
+def gen():
+    return render_template("gen.html" )
+
+@Nashweb.route("/science/physics/preasure")
+def preasure():
+    return render_template("preasure.html" )
