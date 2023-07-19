@@ -101,3 +101,23 @@ def gen():
 @Nashweb.route("/science/physics/preasure")
 def preasure():
     return render_template("preasure.html" )
+
+@Nashweb.route("/science/physics/Density")
+def density():
+    return render_template("density.html" )
+
+@Nashweb.route("/science/physics/Friction")
+def Friction():
+    return render_template("friction.html" )
+
+@Nashweb.route("/science/physics/Momeuntum_and_gravity")
+def gravity():
+    return render_template("gravity.html" )
+
+@Nashweb.route("/science/physics/Newtons_laws")
+def Newton():
+    return render_template("newton.html" )
+
+@Nashweb.route("/science/physics/simple_machines")
+def machines():
+    return render_template("machines.html" )
