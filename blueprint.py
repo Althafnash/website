@@ -121,3 +121,11 @@ def Newton():
 @Nashweb.route("/science/physics/simple_machines")
 def machines():
     return render_template("machines.html" )
+
+@Nashweb.route("/History/The_social_organization_of_ancient_soceity")
+def soceity():
+    return render_template("soceity.html" )
+
+@Nashweb.route("/History/The_Ancient_soceity_of_sri_lanka" )
+def ancient():
+    return render_template("ancient_society.html" )

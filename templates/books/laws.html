@@ -1,10 +1,12 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sprite of laws</title>
-    <style>
+    <title>Momentum and Gravit</title>
+   <style>
     *{
     margin: 0;
     padding: 0;
@@ -13,15 +15,16 @@
     }
 
     body{
+        background: #081b29;
+        color: #ededed;
         overflow: unset;
     }
 
     .header{
-        background: #081b29;
         position: fixed;
         top: 0;
         left: 0;
-        width: 80%;
+        width: 100%;
         padding: 20px 10%;
         display: flex;
         justify-content: space-between;
@@ -50,64 +53,58 @@
         color: #00abf0;
     }
 
-    .links{
-        background: #081b29;
-        width: 20%;
-        height: 100%;
-        position: fixed;
-        left: 1220px;
-    }
-    .content{
-        width: 80%;
-        height: 100%;
-        position: fixed;
-        top: 75px;
-        overflow: scroll;
-        scroll-snap-align: start;
+    .home{
+        height: 80vh;
+        padding: 10% 10% 10% 10% ;
     }
 
-    .links a{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        font-size: 25px;
-        color: #ededed;
-        text-decoration: none;
-        font-weight: 1000px;
-        letter-spacing: 1px;
-    }
-    h1{
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 1.2;
+    .home-content{
+        max-width: 600px;
     }
 
-    h3{
+    .home-content h1{   
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    .home-content h1{
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    .home-content h3{
         font-size: 32px;
         font-weight: 700;
         color: #00abf0;
     }
 
-    p{
-        font-size: 40px;
-        margin: 20px 0px 40px ;
+    .home-content p{
+        font-size: 25px;
+        color: #ededed;
+        text-decoration: none;
+        font-weight: 500;
+        margin: 10px 0px 10px;
     }
-    li{
-        font-size: 40px;
-        margin: 20px 0px 40px ;
+
+    .home-content a{
+        font-size: 25px;
         color: aqua;
+        text-decoration: none;
+        font-weight: 600;
     }
-    .class{
-        height: 100vh;
-        width: 1000;
+
+    .home-content li{
+        font-size: 25px;
+        color: aquamarine;
+        text-decoration: none;
+        font-weight: 600;
     }
-    </style>
+   </style>
 </head>
 <body>
-    <div class="class">
-        <header class="header">
+    <header class="header">
         <a href="#" class="logo">Nash</a>
 
         <nav class="navbar">
@@ -117,12 +114,9 @@
             <a href="http://127.0.0.1:8000/profile">portfoilio</a>
             <a href="http://127.0.0.1:8000/resource">Resources</a>
         </nav>
-        </header>
-        <di class="links">
-            <a href="http://127.0.0.1:8000/book_summaries">Home</a>
-            <a href="http://127.0.0.1:8000/book_summaries/spriteoflaws">Sprite_of_laws</a>
-        </di>
-        <div class="content">
+    </header>
+    <div class="home">
+        <section class="home-content">
             <h1>Sprite_of_laws</h1>
             <p>Laws, in the broadest sense, are the necessary relations which derive from the nature of things; and in this sense all beings have their laws: the deity has its laws,1 The material world has its laws, intelligences higher than man have their laws, beasts have their laws, man has his laws.</p>
             <p>There is therefore a primordial reason; and laws are the relations that exist between it and the different beings, and the relations of those various beings to each other.</p>
@@ -197,9 +191,8 @@
             <p>There one can no more express his fears over a future event than he can blame his failures on the whim of fortune: the lot of men, as of beasts, is instinct, obedience, and punishment</p>
             <p>In moderate monarchical states, authority is limited by what drives them, in other words honor, which reigns like a monarch over the prince and the people. No one would presume to invoke before him the laws of religion; a courtier would feel ridiculous. It is the laws of honor that will be constantly invoked.</p>
             <p>As a result there are necessary modifications in obedience: honor is naturally subject to peculiarities, and obedience will follow all of them. </p>
-            <p>===========================================================================================================</p>
-        </div>
+
+         </section>
     </div>
-    
-</body>
+</body>    
 </html>
