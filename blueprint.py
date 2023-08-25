@@ -129,3 +129,7 @@ def soceity():
 @Nashweb.route("/History/The_Ancient_soceity_of_sri_lanka" )
 def ancient():
     return render_template("ancient_society.html" )
+
+@Nashweb.route("/Science/Classification_of_animals" )
+def classification():
+    return render_template("classification.html" )
