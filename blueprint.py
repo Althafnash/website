@@ -2,7 +2,7 @@ from flask import Blueprint , render_template , redirect , url_for
 import subprocess
 
 def openAI():
-    subprocess.call("I:\\codeing\\website\\phython\\PY_AI\\AI.py")
+    subprocess.call("I:/codeing/website/phython/PY_AI/AI.py")
 
 Nashweb = Blueprint(__name__ , "Nashweb")
 
@@ -130,6 +130,51 @@ def soceity():
 def ancient():
     return render_template("ancient_society.html" )
 
-@Nashweb.route("/Science/Classification_of_animals" )
+@Nashweb.route("/Classification_of_animals" )
 def classification():
     return render_template("classification.html" )
+
+@Nashweb.route("/The art of thinking clearly/home" )
+def art():
+    return render_template("/books/The art of thinking clearly/home.html" )
+
+@Nashweb.route("/The art of thinking clearly/introducation" )
+def art1():
+    return render_template("/books/The art of thinking clearly/introducation.html")
+
+@Nashweb.route("/The art of thinking clearly/survivorship_bias" )
+def art2():
+    return render_template("/books/The art of thinking clearly/survicorshipbias.html" )
+
+@Nashweb.route("/The art of thinking clearly/swimmers_body_illusion" )
+def art3():
+    return render_template("/books/The art of thinking clearly/summiersbodyillusion.html" )
+
+@Nashweb.route("/The art of thinking clearly/clustering_illusion" )
+def art4():
+    return render_template("/books/The art of thinking clearly/clustersillusion.html" )
+
+@Nashweb.route("/The art of thinking clearly/social_proof" )
+def art5():
+    return render_template("/books/The art of thinking clearly/socialproof.html" )
+
+@Nashweb.route("/The art of thinking clearly/sunk_cost_fallacy" )
+def art6():
+    return render_template("/books/The art of thinking clearly/sunkcostfallacy.html" )
+
+@Nashweb.route("/The art of thinking clearly/Reciprocity" )
+def art7():
+    return render_template("/books/The art of thinking clearly/reposicty.html" )
+
+@Nashweb.route("/The art of thinking clearly/Comformation bias" )
+def art8():
+    return render_template("/books/The art of thinking clearly/conformation.html" )
+
+@Nashweb.route("/The art of thinking clearly/Authority bias" )
+def art9():
+    return render_template("/books/The art of thinking clearly/Authority.html" )
+
+@Nashweb.route("/The art of thinking clearly/contrarst effect" )
+def art10():
+    return render_template("/books/The art of thinking clearly/contrast.html" )
+
