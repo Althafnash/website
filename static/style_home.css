@@ -8,6 +8,7 @@
 body{
     background: #081b29;
     color: #ededed;
+    overflow-x: hidden;
 }
 
 .header{
@@ -93,6 +94,28 @@ body{
     font-weight: 600;
     letter-spacing: 1px;
     z-index: 1;
+}
+
+.parallex{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.parallex img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.sec{
+    position: relative;
+    padding: 100px;
+    background: #040228;
 }
 
 

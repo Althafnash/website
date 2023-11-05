@@ -7,24 +7,47 @@
     <link rel="stylesheet" href="../static/style_home.css">
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="logo">Nash</a>
-
-        <nav class="navbar">
-            <a href="http://127.0.0.1:8000/">Home</a>
-            <a href="http://127.0.0.1:8000/about">about</a>
-            <a href="http://127.0.0.1:8000/Docs">Docs</a>
-            <a href="http://127.0.0.1:8000/profile">portfoilio</a>
-            <a href="http://127.0.0.1:8000/resource">Resources</a>
-        </nav>
-    </header>
-    <section class="home">
-        <div class="home-content">
-            <h1>HI ! Welocme</h1>
-            <h3>Welocme to My second Brain</h3>
-            <p>welocme to My second Brain. This webiste is portol of documatation on borad subjects and academic disciplines </p>
-            <p>In addition to documatation we also provide book summaries </p>
-        </div>
+    <section class="parallex">
+        <img src="../static/stars.png" id="stars">
+        <img src="../static/building.png" id="building">
+        <img src="../static/burjkhalifa.png" id="burjkhalifa">
     </section>
+    <section class="sec">
+        <header class="header">
+            <a href="#" class="logo">Nash</a>
+    
+            <nav class="navbar">
+                <a href="http://127.0.0.1:8000/">Home</a>
+                <a href="http://127.0.0.1:8000/about">about</a>
+                <a href="http://127.0.0.1:8000/Docs">Docs</a>
+                <a href="http://127.0.0.1:8000/profile">portfoilio</a>
+                <a href="http://127.0.0.1:8000/resource">Resources</a>
+            </nav>
+        </header>
+        <section class="home">
+            <div class="home-content">
+                <h1>HI ! Welocme</h1>
+                <h3>Welocme to My second Brain</h3>
+                <p>welocme to My second Brain. This webiste is portol of documatation on borad subjects and academic disciplines </p>
+                <p>In addition to documatation we also provide book summaries </p>
+            </div>
+        </section>
+        <section class="sec">
+           
+        </section>
+    </section>
+    <script>
+        let burjkhalifa = document.getElementById("burjkhalifa");
+        let stars = document.getElementById("stars");
+
+        window.addEventListener("scroll", () => {
+            let value = window.scrollY;
+
+            burjkhalifa.style.left = value * 1 + "px";
+            stars.style.top = value * 1 + "px"
+        });
+
+
+    </script>
 </body>
 </html>
