@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nash search enginge</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #search{
+            width: 100%;
+            font-size: 18px;
+            padding: 11px;
+            border: solid 1px black;
+        }
+        #mymenu{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            z-index: 100;
+        }
+        #mymenu li a {
+            padding: 12px;
+            text-decoration: none;
+            color: black;
+            display: block;
+        }
+        #mymenu li a:hover{
+            background-color: #040228;
+            color: #fff;
+        }
+        .logo{
+        font-size: 25px;
+        color: #00abf0;
+        text-decoration: none;
+        font-weight: 600;
+        }
+
+        .navbar a {
+            font-size: 18px;
+            color: aqua;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 35px;
+            transition: 3s;
+        }
+
+        .navbar a:hover{
+            color: #00abf0;
+        }
+        .container{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: -1;
+        background-color: #040228;
+        height: 10px;
+        }
+        .engine{
+            margin-top: 50px;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <a href="http://127.0.0.1:8000/">Home</a>
+            <a href="http://127.0.0.1:8000/about">about</a>
+            <a href="http://127.0.0.1:8000/Docs">Docs</a>
+            <a href="http://127.0.0.1:8000/profile">portfoilio</a>
+            <a href="http://127.0.0.1:8000/resource">Resources</a>
+        </nav>
+    </div>
+    <div class="engine">
+        <input type="text" id="search" onkeyup="search()" placeholder="search" title="type in a catogary">
+        <ul id="mymenu">
+            <li><a href="http://127.0.0.1:8000/science/physics/Force">Force</a></li>
+            <li><a href="http://127.0.0.1:8000/science/physics/Geometric_optics">Geometric optics</a></li>
+            <li><a href="http://127.0.0.1:8000/science/physics/motion">Motion</a></li>
+            <li><a href="http://127.0.0.1:8000/science/physics/preasure">Preasure</a></li>
+            <li><a href="http://127.0.0.1:8000/science/physics/Density">Density</a></li>
+            <li><a href="http://127.0.0.1:8000/science/physics/Momeuntum_and_gravity">Momeuntum</a></li>
+            <li><a href="http://127.0.0.1:8000/science/physics/Newtons_laws">Newtons laws</a></li>
+            <li><a href="http://127.0.0.1:8000/science/physics/Momeuntum_and_gravity">Gravity</a></li>
+            <li><a href="http://127.0.0.1:8000/science/physics/simple_machines">simple machines</a></li>
+            <li><a href="http://127.0.0.1:8000/History/The_Ancient_soceity_of_sri_lank">The Ancient soceity of sri lanka</a></li>
+            <li><a href="http://127.0.0.1:8000/History/The_social_organization_of_ancient_soceity">The social organization of ancient soceity</a></li>
+            <li><a href="http://127.0.0.1:8000/IT/Opreating_system">opreating system</a></li>
+            <li><a href="http://127.0.0.1:8000/ICT/sdlc">System devlopment Life cylcle</a></li>
+            <li><a href="http://127.0.0.1:8000/ICT/genaration%20of%20computres">Generation of computers</a></li>
+            <li><a href="http://127.0.0.1:8000/ICT/programming/Javascript">JavaScript</a></li>
+            <li><a href="http://127.0.0.1:8000/book_summaries/spriteoflaws">sprite of laws</a></li>
+            <li><a href="http://127.0.0.1:8000//The%20art%20of%20thinking%20clearly/home">The art of thinking clearly</a></li>
+            <li><a href="http://127.0.0.1:8000//science/biologhy">Claasification</a></li>
+        </ul>
+    </div>
+   
+    <script>
+        function search() {
+            var input,filter,ul,li,a,i;
+            input = document.getElementById("search");
+            filter = input.value.toUpperCase()
+            ul = document.getElementById("mymenu");
+            li = ul.getElementsByTagName("li");
+
+            for (let i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1){
+                     li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none"
+                }
+                
+            }
+        }
+    </script>
+</body>
+</html>

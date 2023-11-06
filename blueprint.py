@@ -178,3 +178,11 @@ def art9():
 def art10():
     return render_template("/books/The art of thinking clearly/contrast.html" )
 
+@Nashweb.route("/search" )
+def search():
+    return render_template("/search.html" )
+    
+@Nashweb.route("/Dashboard" )
+def dashboard():
+    return render_template("/Dashboard.html" )
+

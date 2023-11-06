@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: linear-gradient(#222 0% ,#222 40% );
+    min-height: 100vh;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    color: #fff;
+    font: 2rem;
+    cursor: default;
+}
+
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 600px;
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    background: #00a3b0;
+}
+/* This  is the parallex code */
+.parallex{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.sec{
+    position: relative;
+    height: 1000px;
+    margin-top: 100px;
+    width: 100%;
+    background: linear-gradient(#222 0% ,#222 40% );
+}
+/* This  is the cards  */
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 150px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.container .card{
+    position: relative;
+    width: 250px;
+    margin: 10px;
+    background: linear-gradient(0deg , #1b1b1b , #222 , #1b1b1b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.container .card:hover{
+    transform: translate(-10px);
+    box-shadow: 0 15px 35px #00a3b0;
+}
+.container .card:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(255,255,255,.03);
+    pointer-events: none;
+    z-index: 1;
+}
+.percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #000;
+    background: #222;
+    z-index: 1000;
+}
+.percent .number{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.percent .number h2{
+    color: #777;
+    font-weight: 700;
+    font-size:40px ;
+    transition:0.5s ;
+}
+.card:hover .percent .number h2{
+    color: #fff;
+    font-size: 60px;
+}
+.percent .number h2 span{
+    font-size: 24px;
+    color: #fff;
+}
+.card:hover .percent .number h2 span{
+    color: #fff;
+}
+.text{
+    position: relative;
+    color: #777;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    margin-top: 20px;
+}
+svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 1000;
+}
+svg circle{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #191919;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px ,5px);
+}
+svg circle:nth-child(2){
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+.card:nth-child(1) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 -  (440 * 33 )/ 100);
+    stroke: #001aff;
+}
+.card:nth-child(2) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 -  (440 * 0)/ 100);
+    stroke: #001aff;
+}
+.card:nth-child(3) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 -  (440 * 30 )/ 100);
+    stroke: #001aff;
+}
+.card:nth-child(4) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 -  (440 * 2 )/ 100);
+    stroke: #001aff;
+}
+.card:nth-child(5) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 -  (440 * 0 )/ 100);
+    stroke: #001aff;
+}
+.card:nth-child(6) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 -  (440 * 0 )/ 100);
+    stroke: #001aff;
+}
+.card:nth-child(7) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 -  (440 * 0 )/ 100);
+    stroke: #001aff;
+}
+.card:nth-child(8) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 -  (440 * 0 )/ 100);
+    stroke: #001aff;
+}
+.card:nth-child(9) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 -  (440 * 0 )/ 100);
+    stroke: #001aff;
+}
+.card:nth-child(10) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 -  (440 * 0 )/ 100);
+    stroke: #001aff;
+}
+/* This  is the code for the profgress bar*/
+.container-bar{
+    width: 100%;
+    height: 100%;
+    background: #222;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+}
+.skills h2{
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 16px;
+}
+.progress-bar{
+    background: #959595;
+    width: 1250px;
+    height: 10px;
+    border-radius: 5px;
+}
+.progress-bar div{
+    height: 10px;
+    border-radius: 5px;
+    width: 50%;
+}
+.progress-bar div span{
+    height: 40px;
+    width: 40px;
+    border-radius:50% ;
+    background: #222;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.html{
+    background: #001aff;
+    animation: html 1s linear forwards;
+}
+.css{
+    background: #001aff;
+    animation: css 1s linear forwards;
+}
+.javascript{
+    background: #001aff;
+    animation: javascript 1s linear forwards;
+}
+.python{
+    background: #001aff;
+    animation: python 1s linear forwards;
+}
+.react{
+    background: #001aff;
+    animation: react 1s linear forwards;
+}
+.history1{
+    background: #001aff;
+    animation: history1 1s linear forwards;
+}
+.history2{
+    background: #001aff;
+    animation: history2 1s linear forwards;
+}
+.history3{
+    background: #001aff;
+    animation: history3 1s linear forwards;
+}
+.history4{
+    background: #001aff;
+    animation: history4 1s linear forwards;
+}
+.history5{
+    background: #001aff;
+    animation: history5 1s linear forwards;
+}
+.ict1{
+    background: #001aff;
+    animation: ict1 1s linear forwards;
+}
+.ict2{
+    background: #001aff;
+    animation: ict2 1s linear forwards;
+}
+.ict3{
+    background: #001aff;
+    animation: ict3 1s linear forwards;
+}
+.ict4{
+    background: #001aff;
+    animation: ict4 1s linear forwards;
+}
+.html span{
+    border: 1px solid #001aff;
+}
+.css span {
+    border: 1px solid #001aff;
+}
+.javascript span {
+    border: 1px solid #001aff;
+}
+.python span { 
+    border: 1px solid #001aff;
+}
+.react span { 
+    border: 1px solid #001aff;
+}
+.history1 span { 
+    border: 1px solid #001aff;
+}
+.history2 span { 
+    border: 1px solid #001aff;
+}
+.history3 span { 
+    border: 1px solid #001aff;
+}
+.history4 span { 
+    border: 1px solid #001aff;
+}
+.history5 span { 
+    border: 1px solid #001aff;
+}
+.ict1 span { 
+    border: 1px solid #001aff;
+}
+.ict2 span { 
+    border: 1px solid #001aff;
+}
+.ict3 span { 
+    border: 1px solid #001aff;
+}
+.ict4 span { 
+    border: 1px solid #001aff;
+}
+@keyframes html{
+    100%{
+        width: 5%;
+    }
+}
+@keyframes css{
+    100%{
+        width: 0%;
+    }
+}
+@keyframes javascript{
+    100%{
+        width: 0%;
+    }
+}
+@keyframes python{
+    100%{
+        width: 100%;
+    }
+}
+@keyframes react{
+    100%{
+        width: 0%;
+    }
+}
+@keyframes history1{
+    100%{
+        width: 0%;
+    }
+}
+@keyframes history2{
+    100%{
+        width: 0%;
+    }
+}
+@keyframes history3{
+    100%{
+        width: 100%;
+    }
+}
+@keyframes history4{
+    100%{
+        width: 100%;
+    }
+}
+@keyframes history5{
+    100%{
+        width: 100%;
+    }
+}
+@keyframes ict1{
+    100%{
+        width: 100%;
+    }
+}
+@keyframes ict2{
+    100%{
+        width: 100%;
+    }
+}
+@keyframes ict3{
+    100%{
+        width: 100%;
+    }
+}
+@keyframes ict4{
+    100%{
+        width: 45%;
+    }
+}
+
+
+
+
+
