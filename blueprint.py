@@ -18,21 +18,21 @@ def WebsiteHome2():
 def WebsiteDocs():
     return render_template("docs.html" )
 
-@Nashweb.route("/IT/Opreating_system")
+@Nashweb.route("/ICT/Opreating_system")
 def OS():
-    return render_template("opreating_system.html" )
+    return render_template("./ICT/opreating_system.html" )
 
 @Nashweb.route("/science/physics/Force")
 def force():
-    return render_template("Force.html" )
+    return render_template("./physics/Force.html" )
 
 @Nashweb.route("/science/physics/Geometric_optics")
 def light():
-    return render_template("Geometric_optics.html" )
+    return render_template("./physics/Geometric_optics.html" )
 
 @Nashweb.route("/science/physics/motion")
 def motion():
-    return render_template("motion.html" )
+    return render_template("./physics/motion.html" )
 
 @Nashweb.route("/about")
 def about():
@@ -76,7 +76,27 @@ def chemistry():
 
 @Nashweb.route("/ICT/programming/Javascript")
 def javascript():
-    return render_template("javascript.html" )
+    return render_template("./javascript/javascript.html" )
+
+@Nashweb.route("/ICT/programming/Javascript/Javascript_output")
+def Javascript_output():
+    return render_template("./javascript/javascript_output.html" )
+
+@Nashweb.route("/ICT/programming/Javascript/syntax")
+def javascript_syntax():
+    return render_template("./javascript/javascript_syntax.html" )
+
+@Nashweb.route("/ICT/programming/Javascript/variable")
+def javascript_variable():
+    return render_template("./javascript/javascript_variable.html" )
+
+@Nashweb.route("/ICT/programming/Javascript/let")
+def javascript_let():
+    return render_template("./javascript/javascript_let.html" )
+
+@Nashweb.route("/ICT/programming/Javascript/const")
+def javascript_const():
+    return render_template("./javascript/javascript_const.html" )
 
 @Nashweb.route("/resource")
 def help():
@@ -92,47 +112,47 @@ def Book_summaries():
 
 @Nashweb.route("/ICT/sdlc")
 def sdlc():
-    return render_template("sdlc.html" )
+    return render_template("./ICT/sdlc.html" )
 
 @Nashweb.route("/ICT/genaration of computres")
 def gen():
-    return render_template("gen.html" )
+    return render_template("./ICT/gen.html" )
 
 @Nashweb.route("/science/physics/preasure")
 def preasure():
-    return render_template("preasure.html" )
+    return render_template("./physics/preasure.html" )
 
 @Nashweb.route("/science/physics/Density")
 def density():
-    return render_template("density.html" )
+    return render_template("./physics/density.html" )
 
 @Nashweb.route("/science/physics/Friction")
 def Friction():
-    return render_template("friction.html" )
+    return render_template("./physics/friction.html" )
 
 @Nashweb.route("/science/physics/Momeuntum_and_gravity")
 def gravity():
-    return render_template("gravity.html" )
+    return render_template("./physics/gravity.html" )
 
 @Nashweb.route("/science/physics/Newtons_laws")
 def Newton():
-    return render_template("newton.html" )
+    return render_template("./physics/newton.html" )
 
 @Nashweb.route("/science/physics/simple_machines")
 def machines():
-    return render_template("machines.html" )
+    return render_template("./physics/machines.html" )
 
 @Nashweb.route("/History/The_social_organization_of_ancient_soceity")
 def soceity():
-    return render_template("soceity.html" )
+    return render_template("./History/soceity.html" )
 
 @Nashweb.route("/History/The_Ancient_soceity_of_sri_lanka" )
 def ancient():
-    return render_template("ancient_society.html" )
+    return render_template("./History/ancient_society.html" )
 
 @Nashweb.route("/Classification_of_animals" )
 def classification():
-    return render_template("classification.html" )
+    return render_template("./biologhy/classification.html" )
 
 @Nashweb.route("/The art of thinking clearly/home" )
 def art():

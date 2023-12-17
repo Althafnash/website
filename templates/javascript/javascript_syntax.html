@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins" , "sans-serif";
+        }
+    
+        body{
+            background: #081b29;
+            color: #ededed;
+            overflow: unset;
+        }
+    
+        .header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+    
+    
+        .logo{
+            font-size: 25px;
+            color: #ededed;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    
+        .navbar a {
+            font-size: 18px;
+            color: #ededed;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 35px;
+            transition: 3s;
+        }
+    
+        .navbar a:hover{
+            color: #00abf0;
+        }
+    
+        .home-content{
+            max-width: 1000px;
+            height: 80vh;
+            padding: 10% 10% 10% 10% ;
+        }
+    
+        .home-content h1{   
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+    
+        .home-content h1{
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+    
+        .home-content h3{
+            font-size: 32px;
+            font-weight: 700;
+            color: #00abf0;
+        }
+    
+        .home-content p{
+            font-size: 25px;
+            color: #ededed;
+            text-decoration: none;
+            font-weight: 500;
+            margin: 10px 0px 10px;
+        }
+    
+        .home-content a{
+            font-size: 25px;
+            color: aqua;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    
+        .home-content li{
+            font-size: 25px;
+            color: aquamarine;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .code{
+            background: blue;
+        }
+        .menu {
+            height: 100%; 
+            width: 500px;
+            position: fixed; 
+            z-index: 1; 
+            top: 10%; 
+            left: 60%;
+            background-color: #081b29; 
+            overflow-x: hidden; 
+            padding-top: 20px;
+        }
+        .menu a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Nash</a>
+
+        <nav class="navbar">
+            <a href="http://127.0.0.1:8000/">Home</a>
+            <a href="http://127.0.0.1:8000/about">about</a>
+            <a href="http://127.0.0.1:8000/Docs">Docs</a>
+            <a href="http://127.0.0.1:8000/profile">portfoilio</a>
+            <a href="http://127.0.0.1:8000/resource">Resources</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h1>Javascript - syntax</h1>
+            <p>A computer program is a list of "instructions" to be "executed" by a computer.</p>
+            <p>In a programming language, these programming instructions are called statements.</p>
+            <p>A JavaScript program is a list of programming statements.</p>
+            <p>In HTML, JavaScript programs are executed by the web browser.</p>
+            <P>JavaScript programs (and JavaScript statements) are often called JavaScript code.</P>
+            <P>JavaScript ignores multiple spaces. You can add white space to your script to make it more readable.</P>
+            <P>For best readability, programmers often like to avoid code lines longer than 80 characters.</P>
+            <P>If a JavaScript statement does not fit on one line, the best place to break it is after an operator:</P>
+            <P>Example</P>
+            <ul>
+                <li>let x, y, z;    // Statement 1</li>
+                <li>x = 5;          // Statement 2</li>
+                <li>y = 6;          // Statement 3</li>
+                <li>z = x + y;      // Statement 4</li>
+            </ul>
+            <p>When separated by semicolons, multiple statements on one line are allowed:</p>
+            <p>a = 5; b = 6; c = a + b;</p>
+            <p>On the web, you might see examples without semicolons.</p>
+            <p>Ending statements with semicolons is not required, but highly recommended.</p>
+            <p>JavaScript ignores multiple spaces. You can add white space to your script to make it more readable.</p>
+            <p>The following lines are equivalent:</p>
+            <ul>
+                <li>let person = "Hege";</li>
+                <li>let person="Hege";</li>
+            </ul>
+            <p>A good practice is to put spaces around operators ( = + - * / ):</p>
+            <p>let x = y + z;</p>
+            <p>JavaScript Line Length and Line Breaks</p>
+            <p>For best readability, programmers often like to avoid code lines longer than 80 characters.</p>
+            <p>If a JavaScript statement does not fit on one line, the best place to break it is after an operator:</p>
+            <p>JavaScript statements can be grouped together in code blocks, inside curly brackets {...}.</p>
+            <p>The purpose of code blocks is to define statements to be executed together.</p>
+            <p>One place you will find statements grouped together in blocks, is in JavaScript functions:</p>
+            <ul>
+                <li>var	     ------ Declares a variable</li>
+                <li>var	     ------ Declares a variable</li>
+                <li>var	     ------ Declares a variable</li>
+                <li>if	     ------ Marks a block of statements to be executed on a condition</li>
+                <li>switch   ------	Marks a block of statements to be executed in different cases</li>
+                <li>for	     ------ Marks a block of statements to be executed in a loop</li>
+                <li>function ------	Declares a function</li>
+                <li>return	 ------ Exits a function</li>
+                <li>try	     ------ Implements error handling to a block of statements</li>
+            </ul>
+            <p>JavaScript keywords are reserved words. Reserved words cannot be used as names for variables.#</p>
+            <ul>
+                <li>Fixed values</li>
+                <li>Variable values</li>
+            </ul>
+            <p>Variable values are called Variables.</p>
+            <p>The two most important syntax rules for fixed values are:</p>
+            <ul>
+                <li>1. Numbers are written with or without decimals:</li>
+                <li>2. Strings are text, written within double or single quotes:</li>
+            </ul>
+            <p>In a programming language, variables are used to store data values.</p>
+            <p>JavaScript uses the keywords var, let and const to declare variables.</p>
+            <p>An equal sign is used to assign values to variables.</p>
+            <p>JavaScript uses arithmetic operators ( + - * / ) to compute values:</p>
+            <p>JavaScript uses an assignment operator ( = ) to assign values to variables:</p>
+            <p>An expression is a combination of values, variables, and operators, which computes to a value.</p>
+            <p>The computation is called an evaluation.</p>
+            <p>The values can be of various types, such as numbers and strings.</p>
+            <p>Not all JavaScript statements are "executed".</p>
+            <p>Code after double slashes // or between /* and */ is treated as a comment.</p>
+            <p>Identifiers are JavaScript names.</p>
+            <p>Identifiers are used to name variables and keywords, and functions.</p>
+            <p>The rules for legal names are the same in most programming languages.</p>
+            <p>A JavaScript name must begin with:</p>
+            <ul>
+                <li>A letter (A-Z or a-z)</li>
+                <li>A dollar sign ($)</li>
+                <li>Or an underscore (_)</li>
+            </ul>
+            <p>Subsequent characters may be letters, digits, underscores, or dollar signs.</p>
+            <p>Multi-line comments start with /* and end with */.</p>
+            <p>Any text between /* and */ will be ignored by JavaScript.</p>
+            <p>It is most common to use single line comments.</p>
+            <p>Block comments are often used for formal documentation.</p>
+            <p>Adding // in front of a code line changes the code lines from an executable line to a comment.</p>
+            
+        </div>
+    </section>
+    <section class="menu">
+        <a href="http://127.0.0.1:8000/ICT/programming/Javascript">Javascript - Introducation</a>
+        <a href="http://127.0.0.1:8000/ICT/programming/Javascript/Javascript_output">Javascript - output</a>
+        <a href="http://127.0.0.1:8000/ICT/programming/Javascript/syntax">Javascript - syntax</a>
+        <a href="http://127.0.0.1:8000/ICT/programming/Javascript/variable">Javascript - variable</a>
+        <a href="http://127.0.0.1:8000/ICT/programming/Javascript/let">Javascript - Let</a>
+        <a href="http://127.0.0.1:8000/ICT/programming/Javascript/const">Javascript - const</a>
+    </section>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins" , "sans-serif";
+        }
+    
+        body{
+            background: #081b29;
+            color: #ededed;
+            overflow: unset;
+        }
+    
+        .header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+    
+    
+        .logo{
+            font-size: 25px;
+            color: #ededed;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    
+        .navbar a {
+            font-size: 18px;
+            color: #ededed;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 35px;
+            transition: 3s;
+        }
+    
+        .navbar a:hover{
+            color: #00abf0;
+        }
+    
+        .home-content{
+            max-width: 1000px;
+            height: 80vh;
+            padding: 10% 10% 10% 10% ;
+        }
+    
+        .home-content h1{   
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+    
+        .home-content h1{
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+    
+        .home-content h3{
+            font-size: 32px;
+            font-weight: 700;
+            color: #00abf0;
+        }
+    
+        .home-content p{
+            font-size: 25px;
+            color: #ededed;
+            text-decoration: none;
+            font-weight: 500;
+            margin: 10px 0px 10px;
+        }
+    
+        .home-content a{
+            font-size: 25px;
+            color: aqua;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    
+        .home-content li{
+            font-size: 25px;
+            color: aquamarine;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .code{
+            background: blue;
+        }
+        .menu {
+            height: 100%; 
+            width: 500px;
+            position: fixed; 
+            z-index: 1; 
+            top: 10%; 
+            left: 60%;
+            background-color: #081b29; 
+            overflow-x: hidden; 
+            padding-top: 20px;
+        }
+        .menu a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Nash</a>
+
+        <nav class="navbar">
+            <a href="http://127.0.0.1:8000/">Home</a>
+            <a href="http://127.0.0.1:8000/about">about</a>
+            <a href="http://127.0.0.1:8000/Docs">Docs</a>
+            <a href="http://127.0.0.1:8000/profile">portfoilio</a>
+            <a href="http://127.0.0.1:8000/resource">Resources</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h1>Javascript - variable</h1>      
+            <p>JavaScript Variables can be declared in 4 ways:</p>
+            <ul>
+                <li>Automatically</li>
+                <li>Using var</li>
+                <li>Using let</li>
+                <li>Using const</li>
+            </ul>
+            <p>It is considered good programming practice to always declare variables before use.</p>
+            <p>The var keyword was used in all JavaScript code from 1995 to 2015.</p>
+            <p>The let and const keywords were added to JavaScript in 2015.</p>
+            <p>The var keyword should only be used in code written for older browsers.</p>
+            <p>When to Use var, let, or const?</p>
+            <ul>
+                <li> 1. Always declare variables</li>
+                <li> 2. Always use const if the value should not be changed</li>
+                <li>3. Always use const if the type should not be changed (Arrays and Objects)</li>
+                <li>4. Only use let if you can't use const</li>
+                <li>5. Only use var if you MUST support old browsers.</li>
+            </ul>
+            <p>All JavaScript variables must be identified with unique names.</p>
+            <p>These unique names are called identifiers.</p>
+            <p>Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).</p>
+            <p>The general rules for constructing names for variables (unique identifiers) are:</p>
+            <ul>
+                <li>Names can contain letters, digits, underscores, and dollar signs.</li>
+                <li>Names must begin with a letter.</li>
+                <li>Names can also begin with $ and _ (but we will not use it in this tutorial).</li>
+                <li>Names are case sensitive (y and Y are different variables).</li>
+                <li>Reserved words (like JavaScript keywords) cannot be used as names.</li>
+            </ul>
+            <p>The "equal to" operator is written like == in JavaScript.</p>
+            <p>JavaScript variables can hold numbers like 100 and text values like "John Doe".</p>
+            <p>In programming, text values are called text strings.</p>
+            <p>JavaScript can handle many types of data, but for now, just think of numbers and strings.</p>
+            <p>Strings are written inside double or single quotes. Numbers are written without quotes.</p>
+            <p>If you put a number in quotes, it will be treated as a text string.</p>
+            <p>You cannot re-declare a variable declared with let or const.</p>
+            <p>This will not work:</p>
+            <p>If you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated.</p>
+            <p>Using the dollar sign is not very common in JavaScript, but professional programmers often use it as an alias for the main function in a JavaScript library.</p>
+            <p>In the JavaScript library jQuery, for instance, the main function $ is used to select HTML elements. In jQuery $("p"); means "select all p elements".</p>
+            <p>Using the underscore is not very common in JavaScript, but a convention among professional programmers is to use it as an alias for "private (hidden)" variables.</p>
+        </div>
+    </section>
+    <section class="menu">
+        <a href="http://127.0.0.1:8000/ICT/programming/Javascript">Javascript - Introducation</a>
+        <a href="http://127.0.0.1:8000/ICT/programming/Javascript/Javascript_output">Javascript - output</a>
+        <a href="http://127.0.0.1:8000/ICT/programming/Javascript/syntax">Javascript - syntax</a>
+        <a href="http://127.0.0.1:8000/ICT/programming/Javascript/variable">Javascript - variable</a>
+        <a href="http://127.0.0.1:8000/ICT/programming/Javascript/let">Javascript - Let</a>
+        <a href="http://127.0.0.1:8000/ICT/programming/Javascript/const">Javascript - const</a>
+    </section>
+</body>
+</html>

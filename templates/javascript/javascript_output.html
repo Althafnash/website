@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins" , "sans-serif";
+        }
+    
+        body{
+            background: #081b29;
+            color: #ededed;
+            overflow: unset;
+        }
+    
+        .header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+    
+    
+        .logo{
+            font-size: 25px;
+            color: #ededed;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    
+        .navbar a {
+            font-size: 18px;
+            color: #ededed;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 35px;
+            transition: 3s;
+        }
+    
+        .navbar a:hover{
+            color: #00abf0;
+        }
+    
+        .home-content{
+            max-width: 1000px;
+            height: 80vh;
+            padding: 10% 10% 10% 10% ;
+        }
+    
+        .home-content h1{   
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+    
+        .home-content h1{
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+    
+        .home-content h3{
+            font-size: 32px;
+            font-weight: 700;
+            color: #00abf0;
+        }
+    
+        .home-content p{
+            font-size: 25px;
+            color: #ededed;
+            text-decoration: none;
+            font-weight: 500;
+            margin: 10px 0px 10px;
+        }
+    
+        .home-content a{
+            font-size: 25px;
+            color: aqua;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    
+        .home-content li{
+            font-size: 25px;
+            color: aquamarine;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .code{
+            background: blue;
+        }
+        .menu {
+            height: 100%; 
+            width: 500px;
+            position: fixed; 
+            z-index: 1; 
+            top: 10%; 
+            left: 60%;
+            background-color: #081b29; 
+            overflow-x: hidden; 
+            padding-top: 20px;
+        }
+        .menu a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Nash</a>
+
+        <nav class="navbar">
+            <a href="http://127.0.0.1:8000/">Home</a>
+            <a href="http://127.0.0.1:8000/about">about</a>
+            <a href="http://127.0.0.1:8000/Docs">Docs</a>
+            <a href="http://127.0.0.1:8000/profile">portfoilio</a>
+            <a href="http://127.0.0.1:8000/resource">Resources</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h1>Javascript - HTML</h1>
+            <p>JavaScript can "display" data in different ways:</p>
+            <p>Writing into an HTML element, using innerHTML.</p>
+            <div class="code"><p>document.getelmentbyid("demo").innerHTML("hello)</p></div>
+            <p>Writing into the HTML output using document.write().</p>
+            <div class="code"><p>document.write()</p></div>
+            <p>Writing into an alert box, using window.alert().</p>
+            <div class="code"><p>window.alert().</p></div>
+            <p>Writing into the browser console, using console.log().</p>
+            <div class="code"><p>console.log().</p></div>  
+        </div>
+    </section>
+    <section class="menu">
+        <a href="http://127.0.0.1:8000/ICT/programming/Javascript">Javascript - Introducation</a>
+        <a href="http://127.0.0.1:8000/ICT/programming/Javascript/Javascript_output">Javascript - output</a>
+        <a href="http://127.0.0.1:8000/ICT/programming/Javascript/syntax">Javascript - syntax</a>
+        <a href="http://127.0.0.1:8000/ICT/programming/Javascript/variable">Javascript - variable</a>
+        <a href="http://127.0.0.1:8000/ICT/programming/Javascript/let">Javascript - Let</a>
+        <a href="http://127.0.0.1:8000/ICT/programming/Javascript/const">Javascript - const</a>
+    </section>
+</body>
+</html>
