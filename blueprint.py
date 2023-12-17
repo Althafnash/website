@@ -150,7 +150,7 @@ def soceity():
 def ancient():
     return render_template("./History/ancient_society.html" )
 
-@Nashweb.route("/Classification_of_animals" )
+@Nashweb.route("/Biologhy/Classification_of_animals" )
 def classification():
     return render_template("./biologhy/classification.html" )
 
