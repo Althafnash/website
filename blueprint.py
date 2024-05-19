@@ -206,3 +206,26 @@ def search():
 def dashboard():
     return render_template("/Dashboard.html" )
 
+@Nashweb.route("/Science/Arrangements-of-particals" )
+def particals():
+    return render_template("Chemsitry/arrganments-of-particals.html" )
+
+@Nashweb.route("/Science/Speration-Methods" )
+def sperate():
+    return render_template("Chemsitry/speration.html" )
+
+@Nashweb.route("/Science/Atoms" )
+def atoms():
+    return render_template("Chemsitry/atoms.html" )
+
+@Nashweb.route("/Science/Chromotography" )
+def chromotor():
+    return render_template("Chemsitry/chromoto.html" )
+
+@Nashweb.route("/Science/metals" )
+def metals():
+    return render_template("Chemsitry/metals.html" )
+
+@Nashweb.route("/Science/nonmetals" )
+def non():
+    return render_template("Chemsitry/non-metals.html" )

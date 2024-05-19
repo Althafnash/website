@@ -298,6 +298,10 @@ svg circle:nth-child(2){
     background: #001aff;
     animation: ict4 1s linear forwards;
 }
+.chem{
+    background: #001aff;
+    animation: chem 1s linear forwards;
+}
 .html span{
     border: 1px solid #001aff;
 }
@@ -406,6 +410,11 @@ svg circle:nth-child(2){
     }
 }
 @keyframes ict4{
+    100%{
+        width: 45%;
+    }
+}
+@keyframes chem{
     100%{
         width: 45%;
     }
