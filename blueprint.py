@@ -102,14 +102,6 @@ def javascript_const():
 def help():
     return render_template("help.html" )
 
-@Nashweb.route("/book_summaries/spriteoflaws")
-def law():
-    return render_template("./books/laws.html" )
-
-@Nashweb.route("/book_summaries")
-def Book_summaries():
-    return render_template("./books/Book_summaries.html" )
-
 @Nashweb.route("/ICT/sdlc")
 def sdlc():
     return render_template("./ICT/sdlc.html" )
@@ -229,3 +221,16 @@ def metals():
 @Nashweb.route("/Science/nonmetals" )
 def non():
     return render_template("Chemsitry/non-metals.html" )
+
+@Nashweb.route("/Book_summaries")
+def books():
+    return render_template("books/book_summaries.html")
+
+@Nashweb.route("/Book_summaries/Laws")
+def bookslaw():
+    return render_template("books/laws.html")
+
+@Nashweb.route("/Book_summaries/The art of thinking clearly/home")
+def bookssptite():
+    return render_template("/books/The art of thinking clearly/home.html")
+
